@@ -1,4 +1,4 @@
-﻿@{ 
+﻿@{
     ViewBag.CurrentMenu = "Department";
 }
 <div class="row">
@@ -36,27 +36,29 @@
                 <div class="table-scrollable">
                     <table class="table table-striped table-bordered table-hover dataTable no-footer" role="grid" aria-describedby="sample_2_info">
                         <thead>
-                            <tr role="row">
-                                <th class="table-checkbox" style="width:40px;text-align:center;"><input id="checkAll" class="group-checkable" type="checkbox"></th>
-                                <th tabindex="0" aria-label="">
-                                    部门名称
-                                </th>
-                                <th tabindex="0" aria-label="">
-                                    部门编号
-                                </th>
-                                <th tabindex="0" aria-label="">
-                                    负责人
-                                </th>
-                                <th tabindex="0" aria-label="">
-                                    联系电话
-                                </th>
-                                <th tabindex="0" aria-label="">
-                                    部门描述
-                                </th>
-                                <th tabindex="0" style="width: 230px;" aria-label="">
-                                    操作
-                                </th>
-                            </tr>
+                        <tr role="row">
+                            <th class="table-checkbox" style="text-align: center; width: 40px;">
+                                <input id="checkAll" class="group-checkable" type="checkbox">
+                            </th>
+                            <th tabindex="0" aria-label="">
+                                部门名称
+                            </th>
+                            <th tabindex="0" aria-label="">
+                                部门编号
+                            </th>
+                            <th tabindex="0" aria-label="">
+                                负责人
+                            </th>
+                            <th tabindex="0" aria-label="">
+                                联系电话
+                            </th>
+                            <th tabindex="0" aria-label="">
+                                部门描述
+                            </th>
+                            <th tabindex="0" style="width: 230px;" aria-label="">
+                                操作
+                            </th>
+                        </tr>
                         </thead>
                         <tbody id="tableBody"></tbody>
                     </table>
@@ -69,6 +71,7 @@
     </div>
 </div>
 @Html.Partial("_Edit")
+
 @section scripts{
     <script src="~/Views/Department/Index.js"></script>
 }
